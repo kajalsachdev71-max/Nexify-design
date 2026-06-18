@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "quote": "Nexify Design completely transformed our online presence. The website they built for Mayur Garments is stunning — our enquiries tripled in the first month. Their attention to detail is unmatched.",
+      "name": "Mayur Sharma",
+      "role": "Owner, Mayur Garments",
+      "initial": "M",
+      "color": "linear-gradient(135deg,#D4AF37,#F4C542)"
+    },
+    {
+      "quote": "From social media strategy to video production — Nexify handled everything with professionalism. Our brand presence grew 10× and the engagement quality is incredible. Truly a world-class team.",
+      "name": "Anmol Patel",
+      "role": "Director, Anmol Enterprises",
+      "initial": "A",
+      "color": "linear-gradient(135deg,#4DA6FF,#6BC1FF)"
+    },
+    {
+      "quote": "The company intro video they created for us is breathtaking. The motion graphics and cinematic quality exceeded every expectation. We now use it at every pitch — it closes deals on its own.",
+      "name": "Gurudev Joshi",
+      "role": "MD, Shri Gurukripa Enterprises",
+      "initial": "G",
+      "color": "linear-gradient(135deg,#8B5CF6,#4DA6FF)"
+    }
+  ]
+}
