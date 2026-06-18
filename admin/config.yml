@@ -1,0 +1,160 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+publish_mode: editorial_workflow
+
+collections:
+
+  # ── BLOG POSTS ──
+  - name: "posts"
+    label: "Blog Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Author", name: "author", widget: "string", default: "Nexify Design" }
+      - { label: "Category", name: "category", widget: "select", options: ["AI & Automation", "Design", "Digital Marketing", "Branding", "Web Development", "Business Growth"] }
+      - { label: "Featured Image", name: "thumbnail", widget: "image", required: false }
+      - { label: "SEO Meta Title", name: "seo_title", widget: "string", hint: "Best: 50-60 characters" }
+      - { label: "SEO Meta Description", name: "seo_description", widget: "text", hint: "Best: 150-160 characters" }
+      - { label: "Focus Keyword", name: "focus_keyword", widget: "string" }
+      - { label: "Excerpt / Summary", name: "excerpt", widget: "text", hint: "Short summary shown on blog listing page" }
+      - { label: "Full Article Content", name: "body", widget: "markdown" }
+      - { label: "Tags", name: "tags", widget: "list", allow_add: true }
+
+  # ── SITE SETTINGS ──
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - label: "General Settings"
+        name: "general"
+        file: "_data/settings.json"
+        fields:
+          - { label: "Site Name", name: "site_name", widget: "string", default: "Nexify Design" }
+          - { label: "Tagline", name: "tagline", widget: "string", default: "New Vision. Smart Innovation." }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Location", name: "location", widget: "string" }
+          - { label: "Instagram URL", name: "instagram", widget: "string", required: false }
+          - { label: "LinkedIn URL", name: "linkedin", widget: "string", required: false }
+          - { label: "Facebook URL", name: "facebook", widget: "string", required: false }
+          - { label: "WhatsApp Number", name: "whatsapp", widget: "string", required: false }
+          - { label: "YouTube URL", name: "youtube", widget: "string", required: false }
+          - { label: "Global SEO Title", name: "global_seo_title", widget: "string" }
+          - { label: "Global SEO Description", name: "global_seo_description", widget: "text" }
+
+  # ── HERO SECTION ──
+  - name: "hero"
+    label: "Hero Section"
+    files:
+      - label: "Hero Content"
+        name: "hero"
+        file: "_data/hero.json"
+        fields:
+          - { label: "Badge Text", name: "badge", widget: "string" }
+          - { label: "Headline Line 1", name: "headline1", widget: "string" }
+          - { label: "Headline Line 2", name: "headline2", widget: "string" }
+          - { label: "Headline Line 3", name: "headline3", widget: "string" }
+          - { label: "Subheadline", name: "subheadline", widget: "text" }
+          - { label: "Button 1 Text", name: "btn1_text", widget: "string" }
+          - { label: "Button 1 Link", name: "btn1_link", widget: "string" }
+          - { label: "Button 2 Text", name: "btn2_text", widget: "string" }
+          - { label: "Button 2 Link", name: "btn2_link", widget: "string" }
+          - label: "Trust Indicators"
+            name: "trust_items"
+            widget: "list"
+            fields:
+              - { label: "Text", name: "text", widget: "string" }
+
+  # ── ABOUT SECTION ──
+  - name: "about"
+    label: "About Section"
+    files:
+      - label: "About Content"
+        name: "about"
+        file: "_data/about.json"
+        fields:
+          - { label: "Section Label", name: "label", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - label: "Stats"
+            name: "stats"
+            widget: "list"
+            fields:
+              - { label: "Number", name: "number", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }
+          - label: "Feature List"
+            name: "features"
+            widget: "list"
+            fields:
+              - { label: "Feature", name: "text", widget: "string" }
+
+  # ── SERVICES ──
+  - name: "services"
+    label: "Services"
+    files:
+      - label: "Services Content"
+        name: "services"
+        file: "_data/services.json"
+        fields:
+          - label: "Services List"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Icon (emoji)", name: "icon", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Tags (comma separated)", name: "tags", widget: "string" }
+
+  # ── PORTFOLIO ──
+  - name: "portfolio"
+    label: "Portfolio Projects"
+    folder: "_data/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Project Name", name: "title", widget: "string" }
+      - { label: "Services (comma separated)", name: "services", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Background Color", name: "bg_color", widget: "string", default: "linear-gradient(135deg,#0B1120,#1a2540)" }
+      - { label: "Display Order", name: "order", widget: "number", default: 1 }
+
+  # ── TESTIMONIALS ──
+  - name: "testimonials"
+    label: "Testimonials"
+    files:
+      - label: "Testimonials"
+        name: "testimonials"
+        file: "_data/testimonials.json"
+        fields:
+          - label: "Testimonials List"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Client Name", name: "name", widget: "string" }
+              - { label: "Client Role", name: "role", widget: "string" }
+              - { label: "Avatar Initial", name: "initial", widget: "string" }
+              - { label: "Avatar Color", name: "color", widget: "string", default: "linear-gradient(135deg,#D4AF37,#F4C542)" }
+
+  # ── WHY CHOOSE ──
+  - name: "why"
+    label: "Why Choose Us"
+    files:
+      - label: "Why Choose Content"
+        name: "why"
+        file: "_data/why.json"
+        fields:
+          - label: "Cards"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Number", name: "number", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }

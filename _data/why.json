@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "number": "01",
+      "title": "AI-First Strategy",
+      "description": "Every project begins with an AI-informed strategy — data analysis, competitive research, and intelligent planning before a single pixel is designed."
+    },
+    {
+      "number": "02",
+      "title": "End-to-End Execution",
+      "description": "From brand identity to launch and beyond — one partner for everything. No fragmented vendors, no miscommunication, just seamless delivery."
+    },
+    {
+      "number": "03",
+      "title": "Premium Quality",
+      "description": "We hold ourselves to the standard of the world's top agencies. Every deliverable is crafted with precision, purpose, and an obsession with excellence."
+    },
+    {
+      "number": "04",
+      "title": "Measurable Results",
+      "description": "We don't just deliver beautiful work — we deliver outcomes. Every campaign, every website, every system is engineered to drive measurable business growth."
+    },
+    {
+      "number": "05",
+      "title": "Transparent Partnership",
+      "description": "Real-time updates, clear communication, and complete transparency throughout every engagement. You always know exactly where your project stands."
+    },
+    {
+      "number": "06",
+      "title": "Future-Ready Systems",
+      "description": "We build digital assets designed for longevity — scalable architectures, modern tech stacks, and AI-ready infrastructure that grows with your business."
+    }
+  ]
+}

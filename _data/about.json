@@ -1,0 +1,19 @@
+{
+  "label": "About Nexify",
+  "heading": "We Build the Future of Digital Business",
+  "description": "Nexify Design is a full-spectrum AI-powered digital agency. We partner with ambitious businesses to craft premium web experiences, automate intelligent workflows, and deploy creative media that drives real growth.",
+  "stats": [
+    { "number": "50+", "label": "Projects" },
+    { "number": "100%", "label": "Client Satisfaction" },
+    { "number": "5+", "label": "Industries" },
+    { "number": "AI", "label": "First Approach" }
+  ],
+  "features": [
+    { "text": "Strategic digital transformation consulting" },
+    { "text": "Custom AI automation & intelligent systems" },
+    { "text": "Premium brand identity & visual design" },
+    { "text": "Data-driven digital marketing campaigns" },
+    { "text": "High-performance web development" },
+    { "text": "Motion graphics & creative video production" }
+  ]
+}
